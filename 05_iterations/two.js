@@ -19,3 +19,14 @@ do {
     console.log(`Score is ${score}`);
     score++
 } while (score <= 10);
+
+/* do while loop is just an another version of while loop isme 
+pehle kaam execute hota hai then condition check hoti hai 
+so here 11 will print but uske aage print nahi hoga due to 
+condition. 
+
+so this is some exceptional behaviour of do while loop from 
+normal while loop but we would be using do while loop very 
+very rare.*/
+
+/* +++++++++++++++++++++++lecture 28 finished++++++++++++++++ */
