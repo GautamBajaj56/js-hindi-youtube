@@ -37,3 +37,6 @@ myCoding.forEach( (item) => {
     
     console.log(item.languageName);
 } )
+
+
+/* ++++++++++++++++++lecture 29 finished+++++++++++++++++++ */
