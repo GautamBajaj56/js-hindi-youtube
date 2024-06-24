@@ -1,34 +1,82 @@
+/* ++++++++++++++++++++++++++++++lecture 12++++++++++++++++++++++++++++++++++++ */
+
+
 const score = 400
-// console.log(score);
+ console.log(score); //output 400 no issues //
 
-const balance = new Number(100)
-// console.log(balance);
+const balance = new Number(100.768)// another way to declare a number //
+ /* but the differece between two is line 1 mei js will decide the
+ datatype by itself but if we want to make sure ki datatype number hi
+  ho then expliciltly we can ensure that using above line */
 
-// console.log(balance.toString().length);
-// console.log(balance.toFixed(1));
 
+ console.log(balance); /* [Number: 100] output
+  here specially likha ki number type ka object hai. also like 
+ strings agar iss "new" keyword se object create karenge to at console
+ we will get to know more about different functions which we can use
+ with that datatype.(another benefit) */
+
+ console.log(balance.toString().length); /* this converts number
+  to string and hence can use all functions of string on balance too
+  ( will return length in this case) */
+
+ console.log(balance.toFixed(2)); /* it tells ki decimal k baad kitni 
+ digits show hongi and it round offs it accordingly
+ */
 const otherNumber = 123.8966
 
-// console.log(otherNumber.toPrecision(4));
+ console.log(otherNumber.toPrecision(4));// watch 8:00-8:30
+ //https://www.youtube.com/watch?v=_KqpeDc47Ro&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=13//
 
-const hundreds = 1000000
-// console.log(hundreds.toLocaleString('en-IN'));
+const hundreds = 1000000  /* seeing so many zeroes creates confusion
+ reduces readability */
+console.log(hundreds.toLocaleString()); /* it improves readability by
+ inserting commas  */
+/* 1,000,000 is the output but it is in american style by default to
+ make it into indian pass an argument as below */
+
+ console.log(hundreds.toLocaleString('en-IN'));
+ /* 10,00,000 as output in indian format */
+
 
 // +++++++++++++ Maths +++++++++++++++++++++++++++++
 
-// console.log(Math);
-// console.log(Math.abs(-4));
-// console.log(Math.round(4.6));
-// console.log(Math.ceil(4.2));
-// console.log(Math.floor(4.9));
-// console.log(Math.min(4, 3, 6, 8));
-// console.log(Math.max(4, 3, 6, 8));
+//Math is a library used in javascript 
 
-console.log(Math.random());
-console.log((Math.random()*10) + 1);
-console.log(Math.floor(Math.random()*10) + 1);
+ console.log(Math); // Object [Math] {} (output)// 
+
+console.log(Math.abs(-4));/* absolute function same as mode || 
+function i math i.e. always returns positive value  
+output: 4 */
+
+console.log(Math.round(4.6));/* round offs output 5 */
+
+console.log(Math.ceil(4.2)); /* returns top value output 5
+agar 4.1 bhi hota tab bhi output 5 hota */
+
+console.log(Math.floor(4.9));/* returns least bound 4 here  */
+
+console.log(Math.min(4, 3, 6, 8));/* returns the minimum element 
+from array 3 here */
+
+console.log(Math.max(4, 3, 6, 8));/* returns the maximum element 
+from array 8 here */
+
+console.log(Math.random());  /* it gives a random  floating point value
+between 0 and 1 ( 0 and 1 both including) */
+
+console.log((Math.random()*10) + 1);/* this will give value between
+ 1 and 10 but still floating point
+  */
+console.log(Math.floor(Math.random()*10) + 1);/* this will give value between
+1 and 10 but integer
+ */
 
 const min = 10
 const max = 20
 
 console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+/* general formula to generate a random integer between a particular 
+range with min value including  */
+
+/* +++++++++++++++++++++lecture finish+++++++++++++++++++++++ */
