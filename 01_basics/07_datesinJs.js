@@ -2,6 +2,10 @@
 
 // Dates
 
+/*JavaScript Date objects represent a single moment in time in a platform-independent 
+format. Date objects encapsulate an integral number that represents milliseconds 
+since the midnight at the beginning of January 1, 1970,   */
+
 let myDate = new Date()
 // console.log(myDate)  // 2024-06-25T11:58:37.390Z (not comparable and useful)
 // console.log(myDate.toString());  // Tue Jun 25 2024 17:31:21 GMT+0530 (India Standard Time) ( thoda sa better)
