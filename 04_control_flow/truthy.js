@@ -39,19 +39,21 @@ if (Object.keys(emptyObj).length === 0) {
 
 // Nullish Coalescing Operator (??): designed specially for 
 // handling null and  undefined
+/* basically kahi baar database se two values come so we try to take non null and 
+non undefined values using this operator */
 
 let val1;
 val1 = 5 ?? 10
-console.log(val1);
+console.log(val1); //5
 
 val1 = null ?? 10
-console.log(val1);
+console.log(val1); //10
 
 val1 = undefined ?? 15
-console.log(val1);
+console.log(val1); //15
 
 val1 = null ?? 10 ?? 20
-console.log(val1);
+console.log(val1); //10
 
 
 // Terniary Operator (basically if else ki shorthand notation)
