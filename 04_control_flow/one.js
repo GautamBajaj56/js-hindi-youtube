@@ -3,7 +3,7 @@
  /* in this lecture basically control flow is discussed. like in 
  previous lecture notes if we will execute then saari non comment 
  lines execute ho jaayengi but by control flow we want that only 
- certain lines of code executes baswd upon some condition */
+ certain lines of code executes based upon some condition */
 
 
 
