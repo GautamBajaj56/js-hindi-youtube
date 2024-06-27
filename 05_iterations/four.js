@@ -32,6 +32,6 @@ arrays as objects with key starting from 0 (index) */
 //     console.log(key);
 // }
 
-/* this for in loop will not work over maps as it is non iterable */
+/* this for in loop will not work over maps as it is non iteratable */
 
 /* ++++++++++++++++++++continued in five.js+++++++++++++++++ */

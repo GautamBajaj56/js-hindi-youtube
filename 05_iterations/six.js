@@ -1,18 +1,51 @@
-// const coding = ["js", "ruby", "java", "python", "cpp"]
+ /* +++++++++++++++++++++++++++++++lec 30 ++++++++++++++++++++++++++++++++++ */
+ 
+ 
+ 
+ const coding = ["js", "ruby", "java", "python", "cpp"]
 
 
-// const values = coding.forEach( (item) => {
-//     //console.log(item);
-//     return item
-// } )
+//const values = coding.forEach( (item) => {   //stored under a variable
+    console.log(item);
+    
+//} )
+console.log(values);
+/* js
+ruby
+java
+python
+cpp
+undefined */
 
-// console.log(values);
+/* undefined shows ki for each ne kuch return nahi kiya 
+what if i use return statement? */
+
+const values = coding.forEach( (item) => {   //stored under a variable
+    //console.log(item);
+    return item
+} )
+
+console.log(values); // undefined
+
+/* above example shows ki for each in any case kuch return back nahi karte  */
+
+/* but sometimes we want ki kuch specific values return ho so can use filter method 
+for it as below explained */
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// const newNums = myNums.filter( (num) => {
-//     return num > 4
-// } )
+const newNums = myNums.filter( (num) => { /* filter function also requires a call 
+                                             back function with an iterator(num in 
+                                             this case) and a condition.
+                                             also unlike for each , filter returns an 
+                                             array of filtered values which satisfy 
+                                             the condition mentioned. hence use ek 
+                                             variable mei store karne ki need (newNums) 
+                                             in this case so that aage use kar paaye */
+    return num > 4
+} )
+
+
 
 // const newNums = []
 
@@ -22,9 +55,12 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 //     }
 // } )
 
+/* above is an alternate of filter ki agar same goal achieve karna hota using for 
+each to kese karte both ways are correct */
+
 // console.log(newNums);
 
-
+/* below is another example of use case of filter */
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
@@ -43,3 +79,5 @@ const books = [
     return bk.publish >= 1995 && bk.genre === "History"
 })
   console.log(userBooks);
+
+  /* ++++++++++++++++++++++++++++++lecture 30 continued aaage++++++++++++++++ */
