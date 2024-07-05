@@ -1,9 +1,19 @@
+<!-- lecture 38 2 projects with Async JS -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <h1>Chai aur code</h1>
@@ -16,12 +26,33 @@
     const changeText = function(){
         document.querySelector('h1').innerHTML = "best JS series"
     }
+    const changeMe = setTimeout(changeText, 2000) /* this function basically changes chai aur code heading to best JS series after interval of 2s see yourself with live server  */
 
-    const changeMe = setTimeout(changeText, 2000)
+/* above changeText is reference passed( already studied) */
+     /* The setTimeout() function in JavaScript is used to execute a function or a block of code after a specified amount of time (in milliseconds). It allows you to delay the execution of code. 
+    
+    the basic syntax of above function includes a callback function and delay time (in milliseconds)
+    
+    Summary
+    Callback Function: A general-purpose function passed as an argument to another function, allowing for asynchronous execution.
+    Handler: A specialized type of callback function used specifically to handle events.*/
 
+    /* now basically agar assume 2s se pehle hume koi action stop krvaana ho to uske liye bhi koi feature hona chaiye 
+    like if we press stop button before 2s chai aur code hi rahe change na ho 
+    
+    so for that we use clearTimeout function */
+
+
+    
     document.querySelector('#stop').addEventListener('click', function(){
         clearTimeout(changeMe)
         console.log("STOPPED")
     })
+
+
 </script>
 </html>
+
+
+<!-- lecture 38 continued aage  -->
+
