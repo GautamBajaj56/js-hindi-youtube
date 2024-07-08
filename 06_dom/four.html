@@ -1,3 +1,6 @@
+<!-- lecture 34  -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +15,8 @@
     </ul>
 </body>
 <script>
+
+    /* we want to create a function which adds a desired list element with text as we want */
     function addLanguage(langName){
         const li = document.createElement('li');
         li.innerHTML = `${langName}`
@@ -20,6 +25,8 @@
     addLanguage("python")
     addLanguage("typescript")
 
+    /* above is not optimized approach as innerhtml traverses the tree and overwrites its value( thoda sa zyada time and space)suitable for small projects but not for big projects */
+
     function addOptiLanguage(langName){
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(langName))
@@ -27,22 +34,28 @@
     }
     addOptiLanguage('golang')
 
-    //Edit
+    /* above approach is optimized and suitable for big projects so always remember create a text node and use appendchild instead of innerHTML */
+
+    //Edit(changing elements using innerHTML and replaceWith)
     const secondLang = document.querySelector("li:nth-child(2)")
     console.log(secondLang);
-    //secondLang.innerHTML = "Mojo"
+    secondLang.innerHTML = "Mojo" // not a god optimized approach
+
     const newli = document.createElement('li')
     newli.textContent = "Mojo"
-    secondLang.replaceWith(newli)
+    secondLang.replaceWith(newli) // a better optimized approach
 
-    //edit
+    //edit (another example of edit using outerhtml)
     const firstLang = document.querySelector("li:first-child")
-    firstLang.outerHTML = '<li>TypeScript</li>'
+    firstLang.outerHTML = '<li>TypeScript</li>' // by this command we changed whole html structure of that element
 
-    //remove
+    //remove (how to remove an element)
     const lastLang = document.querySelector('li:last-child')
     lastLang.remove()
 
 
 </script>
 </html>
+
+<!-- lecture 34 finished -->
+
