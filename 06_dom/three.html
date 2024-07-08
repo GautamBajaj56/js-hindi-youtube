@@ -10,17 +10,28 @@
     
 </body>
 <script>
-    const div = document.createElement('div')
-    console.log(div);
-    div.className = "main"
+
+ /* now we would be creating an element and doing changes in it. */
+
+    const div = document.createElement('div') /*  an empty element 
+    div created */
+    console.log(div); 
+    div.className = "main" //setting atttributes
     div.id = Math.round(Math.random() * 10 + 1)
-    div.setAttribute("title", "generated title")
+    div.setAttribute("title", "generated title") //pass key value pair in this function
     div.style.backgroundColor = "green"
     div.style.padding = "12px"
-    // div.innerText = "Chai aur code"
+    div.innerText = "Chai aur code"// one way to add text in div
+
     const addText = document.createTextNode("Chai aur code")
-    div.appendChild(addText)
+    div.appendChild(addText) /* another way(and people say more optimized) i.e. create a text node first and then append it to div */
+
+    /* now div k andar jo bhi vo memory mei saved but web page pe abhi bhi display nahi hoga */
+
+    /* to display it follow below command */
 
     document.body.appendChild(div)
 </script>
 </html>
+
+<!-- lecture 31,32,33 finished -->
