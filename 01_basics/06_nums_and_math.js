@@ -62,8 +62,7 @@ from array 3 here */
 console.log(Math.max(4, 3, 6, 8));/* returns the maximum element 
 from array 8 here */
 
-console.log(Math.random());  /* it gives a random  floating point value
-between 0 and 1 ( 0 and 1 both including) */
+console.log(Math.random());  /* Math.random() is a method in JavaScript that generates a pseudo-random floating-point number between 0 (inclusive) and 1 (exclusive). This means the generated number can be 0 but will always be less than 1. */
 
 console.log((Math.random()*10) + 1);/* this will give value between
  1 and 10 but still floating point
