@@ -1,3 +1,6 @@
+<!-- video 36  -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,45 +22,66 @@
    </div>
 </body>
 <script>
-    // document.getElementById('owl').onclick = function(){
-    //     alert("owl clicked")
-    // }
+    /* document.getElementById('owl').onclick = function(){
+        alert("owl clicked")
+    }   old inefficient way we dont use it today */
 
-     // attachEvent()
-    // jQuery - on
+     /* attachEvent()
+    jQuery - on  (these two are past frameworks for event listeners now not used) */
 
-    // type, timestamp, defaultPrevented
-    // target, toElement, srcElement, currentTarget,
-    // clientX, clientY, screenX, screenY
-    // altkey, ctrlkey, shiftkey, keyCode
+    
 
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul");
-    // }, false)
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    }, false)  /* we use eventlisteners nowadays (this is the best way used today) and they come in different varieties.
+    like double click, keyboard key press etc. can study it from mdn
+    basically isme two parameters are necessary (like above click and function(e)) where e is the  event object  and false is third parameter which is by default */
+
+    /* now study about these below events by your own (imp) 
+    type, timestamp, defaultPrevented
+    target, toElement, srcElement, currentTarget,
+    clientX, clientY, screenX, screenY (and more position related imp for interview)
+    altkey, ctrlkey, shiftkey, keyCode*/
+
+/* watch from 18:08 to end  */
+
+    
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
     //     e.stopPropagation()
     // }, false)
     
-    // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault();
-    //     e.stopPropagation()
-    //     console.log("google clicked");
-    // }, false)
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault(); /* this method prevents tags from performing their default behaviour( like submit button ka default behaviour is server pe information pahunchaana but by using this can prevent it. Similiarly nav bar ka default behaviour is navigating to web page portion but by using this can prevent it too. ) */
+
+        e.stopPropagation()
+        console.log("google clicked");
+    }, false)
    
     
-    document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
-        if (e.target.tagName === 'IMG') {
-            console.log(e.target.id);
-            let removeIt = e.target.parentNode
-            removeIt.remove()
-        }
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target.tagName);
+    //     if (e.target.tagName === 'IMG') {
+    //         console.log(e.target.id);
+    //         let removeIt = e.target.parentNode
+    //         removeIt.remove()
+    //     }
     
         
-    })
+    // })
+
+
+    const allImages = document.querySelectorAll("#images");
+allImages.forEach(function(image) {
+    image.addEventListener("click", function() {
+        image.remove();
+    });
+});
+
     
     //removeIt.parentNode.removeChild(removeIt)
 </script>
 </html>
+
+<!-- video 36 finished -->
