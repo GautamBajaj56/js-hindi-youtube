@@ -1,3 +1,8 @@
+<!-- video 39 -->
+
+<!-- watch video before V8 engine (not useful much) -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,17 +18,42 @@
 4	DONE	The operation is complete.
 </body>
 <script>
-    const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', requestUrl)
-    xhr.onreadystatechange = function(){
-        console.log(xhr.readyState);
-        if (xhr.readyState === 4) {
-            const data = JSON.parse(this.responseText)
-            console.log(typeof data);
-            console.log(data.followers);
-        }
+   const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+// Define the URL of the API endpoint that will be requested.
+
+const xhr = new XMLHttpRequest();
+// Create a new instance of the XMLHttpRequest object to handle the API request.
+
+xhr.open('GET', requestUrl)
+// Initialize a new GET request to the specified URL.
+// here get ki jagah post can also write depends upon the use case
+
+xhr.onreadystatechange = function(){
+// Define a function to be called whenever the readyState property changes.
+    console.log(xhr.readyState);
+    // Log the current readyState to the console.
+    
+    if (xhr.readyState === 4) {
+        // Check if the request is complete (readyState 4).
+        
+        const data = JSON.parse(this.responseText)
+        // Parse the JSON response text and assign it to the variable 'data'.
+        /* basically we get string format from API request and not object so pehle use convert karna pdega  */
+        
+        console.log(typeof data);
+        // Log the type of the 'data' variable (should be 'object').
+
+        console.log(data.followers);
+        // Log the number of followers from the parsed data object.
+        /* basicallly got number of followers from api of hitesh */
     }
-    xhr.send();
+}
+
+xhr.send();
+// Send the request to the server.
+
 </script>
 </html>
+
+<!-- video 39 finished -->
+
