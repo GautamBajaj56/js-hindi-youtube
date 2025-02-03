@@ -80,7 +80,7 @@ users[1].email // accessing in above situation
 
  console.log(Object.values(tinderUser)); // [ '123abc', 'Sammy', false ]
  console.log(Object.entries(tinderUser)); // [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
-
+/* The Object.entries() method in JavaScript returns an array of key-value pairs from an object. */
 
  /* sometimes we are trying to access some property but if it does not exist then 
  program crash hone k chances hote hai so we  can check the existence of any property 

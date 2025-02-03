@@ -7,6 +7,8 @@
 /* via both ways object hi create hota nondifference in performace just singleton ka 
 difference hota hai  */
 
+//singleton k baare mei dont stress just remember the fact for interview.
+
 /* for interview remember whenever declared via literal tab singletion nahi banta 
 but jab constructor se object banega tab singleton humesha banega */
 
@@ -88,5 +90,7 @@ undefined */
 console.log(JsUser.greetingTwo());
 /* Hello JS user, Hitesh
 undefined */
+
+//ignore that undefined will discuss about that later//
 
 /* ++++++++++++++++++++++++++++++++++++++++lecture 16 finished+++++++++++++++++ */
