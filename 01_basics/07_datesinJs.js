@@ -48,7 +48,8 @@ let newDate = new Date()
 // `${newDate.getDay()} and the time `      (string interpolation)
 
 newDate.toLocaleString('default',{
-    weekday:"long"                     // press ctrl+space for properties like weekday
+    weekday:"long" 
+      //(cursor here)                   press ctrl+space for properties like weekday
 })
 
 

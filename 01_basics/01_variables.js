@@ -25,7 +25,7 @@ sakti hai  */
 var accountPassword = "12345" // dont use
 
 accountCity = "Jaipur" /* bina const and let k bhi variables 
-ko value assign kii jaa sakti hai remember that */
+ko value assign kii jaa sakti hai remember that but not preferred as in strict mode you cant declare variables in such way. */
 
 
 

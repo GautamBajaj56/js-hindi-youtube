@@ -6,11 +6,11 @@
  primitive and non primitive 
 the classification is done on the basis of how data is stored in memory and how data 
 is accessed.
- */
+ 
 
-//  Primitive
+  Primitive
 
-/*  7 types : 1.String 
+  7 types : 1.String 
 2.Number 
 
 3.Boolean 
@@ -22,24 +22,24 @@ issues usne wapis kuch nahi bheja so null would be the state)
 so we leave it as it is )
 
 6.Symbol(for unique identification of a value), 
- */
+ 
 
-/*7. BigInt : say bahut badi sceintific value jise number handle nahi kar paa rha so we 
-use big int */
+7. BigInt : say bahut badi sceintific value jise number handle nahi kar paa rha so we 
+use big int 
 
 
-/* NOTE: JavaScript is a dynamically typed language. This means that variable types 
-are determined at runtime, and you do not need to explicitly declare variable types like c++ */
+ NOTE: JavaScript is a dynamically typed language. This means that variable types 
+are determined at runtime, and you do not need to explicitly declare variable types like c++ 
 
-// const score = 100  (number)
-// const scoreValue = 100.3       also included in number no special type for
-// decimal like float or int etc. like python
-
-// const isLoggedIn = false        (boolean)
-// const outsideTemp = null    (means variable outsideTemp is empty no value inside)
-// let userEmail;               (undefined)
-/* or can also write as 
-let userEmail=undefined */
+ const score = 100  (number)
+ const scoreValue = 100.3       also included in number no special type for
+decimal like float or int etc. like python 
+ 
+const isLoggedIn = false        (boolean)
+const outsideTemp = null    (means variable outsideTemp is empty no value inside)
+let userEmail;               (undefined)
+or can also write as 
+let userEmail=undefined
 
 // const id = Symbol('123')
 // const anotherId = Symbol('123')
@@ -63,15 +63,21 @@ let myObj = {
     name: "hitesh",
     age: 22,
 }
+you can give anny datatype under object (number , array, another object etc.)
 
 const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof bigNumber); // undefined
+function can also be stored under a variable like above 
 
+const bigNumber = 3456543576654356754n 
+console.log(typeof bigNumber); // undefined ( remember)
+
+const outsideTemp = null
 console.log(typeof outsideTemp); // object
 
+ const scoreValue = 100.3 
 console.log(typeof scoreValue); //number
 
 console.log(typeof myFunction); // function 

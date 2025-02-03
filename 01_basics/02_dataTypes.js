@@ -1,12 +1,12 @@
 "use strict"; // treat all JS code as newer version
 
-// alert( 3 + 3) // we are using nodejs, not browser
+// alert( 3 + 3) // we are using nodejs, not browser. this command runs in browser but node js mei use karne ka different format.
 
 console.log(3 
     +
-     3) // code readability should be high
+     3) // code readability should be high. dont write code like this line though output aa jaayega
 
-console.log("Hitesh")
+
 
 
 let name = "hitesh"
@@ -32,4 +32,4 @@ use kar rahe honge) */
 console.log(typeof undefined); // undefined
 console.log(typeof null); // object
 
-/* +++++++++++++++++lecture finish+++++++++++++++++++++++++ */
+/* +++++++++++++++++lecture 5 finish+++++++++++++++++++++++++ */

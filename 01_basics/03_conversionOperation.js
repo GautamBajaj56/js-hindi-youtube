@@ -66,7 +66,7 @@ console.log(valueInNumber); //0
 
 
 
-// "33" => 33
+// "33" => 33      => means converts into
 // "33abc" => NaN
 //  true => 1; false => 0  /* a short summary */
 
