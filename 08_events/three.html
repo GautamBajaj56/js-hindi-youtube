@@ -1,9 +1,22 @@
+<!-- lecture 38 continued -->
+
+<!-- peeche cleartimeout function mei konsa timeout clear karna pass karna was mandatory as kahi saare ho sakte the in same web page
+ 
+ansd cleartimeout ko kisi event k saath hi use karne ka benefit as agar khaali likh diya then kuch bhi nahi hoga and settimeout ko bhi run nahi hone dega -->
+ 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <h1>Chai aur Javascript</h1>
@@ -11,12 +24,48 @@
     <button id="stop">Stop</button>
 </body>
 <script>
-    const sayDate = function(str){
+
+    /* setInterval(): The setInterval() function calls a specified function or executes a block of code repeatedly at fixed time intervals. */
+
+    // const sayDate = function(str){
+    //     console.log(str, Date.now());
+    // }
+
+    // const intervalId = setInterval(sayDate, 1000, "hi")
+
+    // clearInterval(intervalId) // it will stop the execution forever
+    //jab tak ye likha hai as intervalID k interval ka timeinterval
+    // hi clear kar diya 
+
+    /* now we will try to make start and stop buttons ka use */
+
+    let intervalid;
+    document.querySelector("#start").addEventListener("click",function(){
+        const sayDate = function(str){
         console.log(str, Date.now());
+         intervalId = setInterval(sayDate, 1000, "hi")
+
     }
 
-    const intervalId = setInterval(sayDate, 1000, "hi")
+    /* the content written inside a <script> tag is not visible on the web page itself but can be visible in the console of the web page (browser's developer tools). The <script> tag is used to include JavaScript code that will be executed by the browser, rather than being displayed as part of the page's content.
 
-    clearInterval(intervalId)
+ */
+
+    
+
+    });
+
+    document.querySelector("#stop").addEventListener("click",function(){
+        clearInterval(intervalId)
+        console.log("task stopped")
+    });
+
+    /* see this task in indu.html file */
+
+    
+
+
 </script>
 </html>
+
+bgc

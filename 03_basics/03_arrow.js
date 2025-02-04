@@ -41,12 +41,19 @@ bhi hue due to this keyword as this current instance/context ko point karta hai 
 
 console.log(this); //{} (an empty object)
 
-/* but if webpage cosole pe jaake karte then window object return karta */
+/* but if webpage console pe jaake karte then window object return karta */
+
+function chai(){
+    
+    console.log(this);
+}  // gives a large window object as output showing there is something in this object at global level which we can access but can't understand directly.
+
+chai()
 
 function chai(){
     let username = "hitesh"
     console.log(this.username);
-}
+}  // undefined (means this works better with objects only and not with functions)
 
 chai()
 
@@ -64,6 +71,7 @@ const chai =  () => {
     let username = "hitesh"
     console.log(this);  //{}      this will not work inside functions 
                        //works only in objects
+                       // so this implementation is different in normal function and arrow functions. in normal function it returns a big window object and in arrow function it returns object.
 }
 
 
@@ -71,18 +79,18 @@ chai()
 
 /* arrow function banane k liye simply remove function keyword and add arrow */
 
-//() => {} a simpple arrow function jo abhi kisi variable mei stored nahi hai
+//() => {} a simple arrow function jo abhi kisi variable mei stored nahi hai
 // const add = ()=>{} here store karva diya 
 // {} iske andar function definition aayegi 
 
-const addTwo = (num1, num2) => { /* when braces used return statement
+let addTwo = (num1, num2) => { /* when braces used return statement
                                            is must */
     return num1 + num2
 }
 
- addTwo = (num1, num2) =>  num1 + num2   // no return statement required
+ addTwo = (num1, num2) =>  num1 + num2   // no return statement required  
 
- addTwo = (num1, num2) => ( num1 + num2 )// no return statement required
+ addTwo = (num1, num2) => ( num1 + num2 )// no return statement required 
                                         // when () are used 
 
 
@@ -92,8 +100,8 @@ const addTwo = (num1, num2) => { /* when braces used return statement
 console.log(addTwo(3, 4))
 
 
-const myArray = [2, 5, 3, 7, 8]
+// const myArray = [2, 5, 3, 7, 8]
 
-myArray.forEach()
+// myArray.forEach() will study about these in next lectures.
 
 /* ++++++++++++++++++++++++lecture 23 finished++++++++ */

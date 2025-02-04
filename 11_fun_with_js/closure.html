@@ -1,3 +1,6 @@
+<!-- ++++++++++++++++++++++lecture 49++++++++++++++++ -->
+ <!-- will study about lexical scope and closure in 49 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,34 +12,39 @@
     <button id="orange">Orange</button>
     <button id="green">Green</button>
 </body>
+<!-- lexical scoping ko understand by example
+ bache bado se saari cheeze (variables and methods) le sakte hai but bade baccho se nahi kar sakte hai 
+ also bhai bhai (functions within same scope same priority) aapas mei bhi ek doosre k saath variables methods share nahi kar skte-->
 
     <script>
-    // function init() {
-    //     let name = "Mozilla"; 
-    //     function displayName() {
-    //         console.log(name); 
-    //     }
-    //     displayName();
-    // }
-    // init();
+    function init() {
+        let name = "Mozilla"; 
+        function displayName() {
+            console.log(name); // accessible 
+        }
+        displayName();
+    }
+    init();
 
-    // function outer(){
-    //     let username = "hitesh"
-    //     console.log("OUTER", secret);
-    //     function inner(){
-    //         let secret = "my123"
-    //         console.log("inner", username);
-    //     }
-    //     function innerTwo(){
-    //         console.log("innerTwo", username);
-    //         console.log(secret);
-    //     }
-    //     inner()
-    //     innerTwo()
+    function outer(){
+        let username = "hitesh"
+        console.log("OUTER", secret); // not accessible
+        function inner(){
+            let secret = "my123"
+            console.log("inner", username); // accessible
+        }
+        function innerTwo(){
+            console.log("innerTwo", username); // accessible
+            console.log(secret); // not accessible ( bhai bhai don't share)
+        }
+        inner()
+        innerTwo()
 
-    // }
-    // outer()
-    // console.log("TOO OUTER", username);
+    }
+    outer()
+    console.log("TOO OUTER", username); // not accessible
+
+    /* in technical terms inner functions have access to variables and functions created in outer functions but vice versa is not true */
 
 
     // function makeFunc() {
