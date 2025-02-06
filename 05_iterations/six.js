@@ -6,10 +6,10 @@
 
 
 //const values = coding.forEach( (item) => {   //stored under a variable
-    console.log(item);
+    //console.log(item);
     
 //} )
-console.log(values);
+//console.log(values);
 /* js
 ruby
 java

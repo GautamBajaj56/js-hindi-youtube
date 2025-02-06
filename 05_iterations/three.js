@@ -8,6 +8,7 @@ const arr = [1, 2, 3, 4, 5]
 for (const num of arr) {
     //console.log(num);
 }
+
 /* in this for of loop though we will mostly use normal for loop
 there is no need to give condition or increment decrement  */
 
@@ -35,6 +36,7 @@ output as maps dont contain duplicate key value pairs */
 //console.log(map);
 
 for(const key of map){
+
      console.log(key);
 
 }
@@ -42,7 +44,7 @@ for(const key of map){
  were inserted */
 
 for (const [key, value] of map) {
-    // console.log(key, ':-', value);
+    console.log(key, ':-', value);
 }
 
 /* by this method alag alag dega destructure kar diya array ko
@@ -53,10 +55,11 @@ const myObject = {
     game2: 'Spiderman'
 }
 
-// for (const [key, value] of myObject) {
-//     console.log(key, ':-', value);
+
+for (const [key, value] of myObject) {
+    console.log(key, ':-', value);
     
-// }
+}
 
 /* note that object is not iterable whereas maps are iterable
 so objects can't be iterated via this map way we will follow 
