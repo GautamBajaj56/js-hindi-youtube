@@ -65,4 +65,3 @@ this method is much more  convenient  */
 
 
 /* +++++++++++++++++++++++++++++++++lecture 30 finished++++++++++++++++++++++ */
-
