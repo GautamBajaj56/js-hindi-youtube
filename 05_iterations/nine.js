@@ -1,4 +1,6 @@
 /* +++++++++++++++++++++++++++++lec 30 continued++++++++++++++++++++
+
+++++++no eight.js present it is in continuation with seven.js+++++++
  */
 
 /* here we will discuss reduce method  */
@@ -63,3 +65,4 @@ this method is much more  convenient  */
 
 
 /* +++++++++++++++++++++++++++++++++lecture 30 finished++++++++++++++++++++++ */
+
