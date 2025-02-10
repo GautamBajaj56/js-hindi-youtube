@@ -15,7 +15,7 @@ Setters are methods that set the value of a specific property. They are defined 
 
 3. setter function is used to set values of a property of class concerned from outside and getter function is used to get those values from outside in straight or in modified form as user needs.*/
 
-/* basically the main concept of getter and setter functions is that we dont want user to access some properties directly. so we make them private variable via underscore( though they can be accessed underscore just indicates other programmer that it is a private variable)
+/* basically the main concept of getter and setter functions is that we dont want user to access some properties directly. so we make them private variable via underscore( though they can be accessed.. underscore just indicates other programmer that it is a private variable)
 
 so either hum user ko un private variables ki value return nhi karvaana chahte ya fir modified form mei return values karvaana chahte hai */
 
