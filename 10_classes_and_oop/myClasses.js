@@ -50,4 +50,4 @@ const tea = new User("tea", "tea@gmail.com", "123")
 console.log(tea.encryptPassword());
 console.log(tea.changeUsername());
 
-/* lecture 45 continued aage  */
+/* lecture 45 continued aage in inheritance.js */

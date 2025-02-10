@@ -37,4 +37,5 @@ const iphone = new Teacher("iphone", "i@phone.com")
 // this implies even via inheritance static properties and methods cannot be accessed.
 
 /* ++++++++++++++++++++++++++++lecture 45 finished+++++++++++++++++++++++++++++++++ */
-
+/* watch video 46
+after that refer lec47_obj_adv_math file */

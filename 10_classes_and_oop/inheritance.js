@@ -38,6 +38,6 @@ masalaChai.logMe(); // USERNAME is masalaChai
 
 console.log(chai instanceof User); // Checks if chai is an instance of User, returns true as though chai is an instance of Teacher but Teacher is child class of User.
 
-/* video 45 continued aage  */
+/* video 45 continued aage ( go to staticprop.js)  */
 
 
